@@ -16,5 +16,11 @@ namespace SistemaInventario
         {
             InitializeComponent();
         }
+
+        private void regresarAlHomeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Home().Show();
+            this.Close();
+        }
     }
 }

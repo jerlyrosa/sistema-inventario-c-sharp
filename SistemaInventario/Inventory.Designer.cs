@@ -30,7 +30,10 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.regresarAlHomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -52,6 +55,23 @@
             this.dataGridView1.Size = new System.Drawing.Size(638, 298);
             this.dataGridView1.TabIndex = 4;
             // 
+            // regresarAlHomeToolStripMenuItem
+            // 
+            this.regresarAlHomeToolStripMenuItem.Name = "regresarAlHomeToolStripMenuItem";
+            this.regresarAlHomeToolStripMenuItem.Size = new System.Drawing.Size(110, 20);
+            this.regresarAlHomeToolStripMenuItem.Text = "Regresar al home";
+            this.regresarAlHomeToolStripMenuItem.Click += new System.EventHandler(this.regresarAlHomeToolStripMenuItem_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.regresarAlHomeToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(726, 24);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -59,9 +79,13 @@
             this.ClientSize = new System.Drawing.Size(726, 450);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Inventory";
             this.Text = "Inventory";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -71,5 +95,7 @@
 
         private Label label2;
         private DataGridView dataGridView1;
+        private ToolStripMenuItem regresarAlHomeToolStripMenuItem;
+        private MenuStrip menuStrip1;
     }
 }

@@ -41,6 +41,9 @@
             this.btnAceptar = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.regresarAlHomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtLastName
@@ -152,11 +155,29 @@
             this.label6.TabIndex = 20;
             this.label6.Text = "Contraseña";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.regresarAlHomeToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(521, 24);
+            this.menuStrip1.TabIndex = 22;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // regresarAlHomeToolStripMenuItem
+            // 
+            this.regresarAlHomeToolStripMenuItem.Name = "regresarAlHomeToolStripMenuItem";
+            this.regresarAlHomeToolStripMenuItem.Size = new System.Drawing.Size(110, 20);
+            this.regresarAlHomeToolStripMenuItem.Text = "Regresar al home";
+            this.regresarAlHomeToolStripMenuItem.Click += new System.EventHandler(this.regresarAlHomeToolStripMenuItem_Click);
+            // 
             // register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(521, 409);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnCancelar);
@@ -172,6 +193,8 @@
             this.Controls.Add(this.label1);
             this.Name = "register";
             this.Text = "Registrar nuevo Usuario";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +215,7 @@
         private Button btnAceptar;
         private TextBox txtPassword;
         private Label label6;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem regresarAlHomeToolStripMenuItem;
     }
 }
