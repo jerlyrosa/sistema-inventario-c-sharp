@@ -26,7 +26,7 @@ namespace connectionDb
     }
     public class classData
     {
-        public Boolean registrarUsuario(string name,string lastname, string address, string email, string password, string fullName)
+        public Boolean registrarUsuario(string name,string lastname, string username, string address, string email, string password)
         {
             connection database = new connection();
             database.connect.Open();
@@ -35,9 +35,10 @@ namespace connectionDb
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@name", name);
             cmd.Parameters.AddWithValue("@lastname", lastname);
+            cmd.Parameters.AddWithValue("@username", username);
             cmd.Parameters.AddWithValue("@address", address);
             cmd.Parameters.AddWithValue("@email", email);
-            cmd.Parameters.AddWithValue("@contrasena", password);
+            cmd.Parameters.AddWithValue("@password", password);
 
 
             try
@@ -53,7 +54,7 @@ namespace connectionDb
         }
 
 
-        public Boolean loginUser(string username="", string password="")
+        public Boolean loginUser(string username, string password)
         {
             connection database = new connection();
             database.connect.Open();
@@ -64,15 +65,13 @@ namespace connectionDb
 
             try
             {
-                SqlDataReader reader = cmd.ExecuteReader();
-                if (reader.Read())
-                {
-                    return true;
-
-                }
-                return true;
       
- 
+
+     
+
+                return true;
+
+
             }
             catch (SqlException ex)
             {

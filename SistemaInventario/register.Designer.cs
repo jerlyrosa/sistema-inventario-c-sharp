@@ -43,6 +43,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.regresarAlHomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,14 +92,14 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(182, 224);
+            this.txtEmail.Location = new System.Drawing.Point(182, 266);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(214, 23);
             this.txtEmail.TabIndex = 17;
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(182, 185);
+            this.txtAddress.Location = new System.Drawing.Point(182, 227);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(214, 23);
             this.txtAddress.TabIndex = 16;
@@ -105,7 +107,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(124, 227);
+            this.label4.Location = new System.Drawing.Point(124, 269);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 15);
             this.label4.TabIndex = 15;
@@ -114,7 +116,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(103, 188);
+            this.label5.Location = new System.Drawing.Point(103, 230);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 15);
             this.label5.TabIndex = 14;
@@ -122,25 +124,27 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(173, 336);
+            this.btnCancelar.Location = new System.Drawing.Point(173, 354);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 19;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(265, 336);
+            this.btnAceptar.Location = new System.Drawing.Point(265, 354);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.TabIndex = 18;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(182, 267);
+            this.txtPassword.Location = new System.Drawing.Point(182, 309);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(164, 23);
             this.txtPassword.TabIndex = 21;
@@ -149,7 +153,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(93, 267);
+            this.label6.Location = new System.Drawing.Point(93, 309);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 15);
             this.label6.TabIndex = 20;
@@ -172,11 +176,29 @@
             this.regresarAlHomeToolStripMenuItem.Text = "Regresar al home";
             this.regresarAlHomeToolStripMenuItem.Click += new System.EventHandler(this.regresarAlHomeToolStripMenuItem_Click);
             // 
+            // txtUserName
+            // 
+            this.txtUserName.Location = new System.Drawing.Point(182, 185);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(214, 23);
+            this.txtUserName.TabIndex = 24;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(109, 188);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(62, 15);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "UserName";
+            // 
             // register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(521, 409);
+            this.Controls.Add(this.txtUserName);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label6);
@@ -217,5 +239,7 @@
         private Label label6;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem regresarAlHomeToolStripMenuItem;
+        private TextBox txtUserName;
+        private Label label7;
     }
 }

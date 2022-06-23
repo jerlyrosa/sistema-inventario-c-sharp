@@ -27,13 +27,12 @@ namespace SistemaInventario
         
 
 
-
             if (username == "" || password == "")
             {
                 MessageBox.Show("Datos Obligatorios", "Error al iniciar sesion", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            Boolean isSucess = data.loginUser(Convert.ToString(username), password);
+            Boolean isSucess = data.loginUser(Convert.ToString(username), Convert.ToString(password));
             if (isSucess)
             {
             MessageBox.Show("WELCOME " + username);
@@ -51,7 +50,11 @@ namespace SistemaInventario
             }
 
 
+        }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
