@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -72,12 +72,12 @@
             this.username.Size = new System.Drawing.Size(214, 23);
             this.username.TabIndex = 3;
             // 
-            // textBox1
+            // password
             // 
-            this.textBox1.Location = new System.Drawing.Point(150, 125);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 23);
-            this.textBox1.TabIndex = 4;
+            this.password.Location = new System.Drawing.Point(150, 125);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(214, 23);
+            this.password.TabIndex = 4;
             // 
             // btnAceptar
             // 
@@ -87,6 +87,7 @@
             this.btnAceptar.TabIndex = 5;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
@@ -104,7 +105,7 @@
             this.ClientSize = new System.Drawing.Size(486, 243);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.password);
             this.Controls.Add(this.username);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -122,7 +123,7 @@
         private Label label2;
         private Label label3;
         private TextBox username;
-        private TextBox textBox1;
+        private TextBox password;
         private Button btnAceptar;
         private Button btnCancelar;
     }

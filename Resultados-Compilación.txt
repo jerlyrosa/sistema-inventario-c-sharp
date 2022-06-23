@@ -1,0 +1,6 @@
+﻿Operación Compilar iniciada..
+1>------ Operación Compilar iniciada: proyecto: SistemaInventario, configuración: Debug Any CPU ------
+1>Omitiendo analizadores para acelerar la compilación. Puede ejecutar los comandos "Build" o "Rebuild" para ejecutar los analizadores.
+1>C:\Users\jerly\source\repos\SistemaInventario\SistemaInventario\classConnectDB.cs(69,29,69,29): error CS1002: Se esperaba ;
+1>Compilación del proyecto "SistemaInventario.csproj" terminada -- ERROR.
+========== Compilar: 0 correctos, 1 incorrectos, 0 actualizados, 0 omitidos ==========
