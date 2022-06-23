@@ -6,5 +6,10 @@ namespace SistemaInventario
         {
             InitializeComponent();
         }
+
+        private void agregarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

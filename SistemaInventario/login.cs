@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemaInventario
 {
-    public partial class º : Form
+    public partial class Login : Form
     {
-        public º()
+        public Login()
         {
             InitializeComponent();
         }
