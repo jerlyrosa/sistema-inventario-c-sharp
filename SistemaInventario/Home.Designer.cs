@@ -33,8 +33,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarNuevoUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaDeUsuariosRegistradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarObjectoAlInventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +63,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inventarioToolStripMenuItem,
+            this.agregarObjectoAlInventarioToolStripMenuItem,
             this.agregarNuevoUsuarioToolStripMenuItem,
             this.listaDeUsuariosRegistradosToolStripMenuItem,
             this.salirToolStripMenuItem});
@@ -85,6 +87,13 @@
             this.agregarNuevoUsuarioToolStripMenuItem.Text = "Agregar nuevo Usuario";
             this.agregarNuevoUsuarioToolStripMenuItem.Click += new System.EventHandler(this.agregarNuevoUsuarioToolStripMenuItem_Click);
             // 
+            // listaDeUsuariosRegistradosToolStripMenuItem
+            // 
+            this.listaDeUsuariosRegistradosToolStripMenuItem.Name = "listaDeUsuariosRegistradosToolStripMenuItem";
+            this.listaDeUsuariosRegistradosToolStripMenuItem.Size = new System.Drawing.Size(167, 20);
+            this.listaDeUsuariosRegistradosToolStripMenuItem.Text = "Lista de usuarios registrados";
+            this.listaDeUsuariosRegistradosToolStripMenuItem.Click += new System.EventHandler(this.listaDeUsuariosRegistradosToolStripMenuItem_Click);
+            // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
@@ -92,12 +101,12 @@
             this.salirToolStripMenuItem.Text = "salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
-            // listaDeUsuariosRegistradosToolStripMenuItem
+            // agregarObjectoAlInventarioToolStripMenuItem
             // 
-            this.listaDeUsuariosRegistradosToolStripMenuItem.Name = "listaDeUsuariosRegistradosToolStripMenuItem";
-            this.listaDeUsuariosRegistradosToolStripMenuItem.Size = new System.Drawing.Size(167, 20);
-            this.listaDeUsuariosRegistradosToolStripMenuItem.Text = "Lista de usuarios registrados";
-            this.listaDeUsuariosRegistradosToolStripMenuItem.Click += new System.EventHandler(this.listaDeUsuariosRegistradosToolStripMenuItem_Click);
+            this.agregarObjectoAlInventarioToolStripMenuItem.Name = "agregarObjectoAlInventarioToolStripMenuItem";
+            this.agregarObjectoAlInventarioToolStripMenuItem.Size = new System.Drawing.Size(174, 20);
+            this.agregarObjectoAlInventarioToolStripMenuItem.Text = "Agregar Objecto al Inventario";
+            this.agregarObjectoAlInventarioToolStripMenuItem.Click += new System.EventHandler(this.agregarObjectoAlInventarioToolStripMenuItem_Click);
             // 
             // Home
             // 
@@ -127,5 +136,6 @@
         private ToolStripMenuItem agregarNuevoUsuarioToolStripMenuItem;
         private ToolStripMenuItem salirToolStripMenuItem;
         private ToolStripMenuItem listaDeUsuariosRegistradosToolStripMenuItem;
+        private ToolStripMenuItem agregarObjectoAlInventarioToolStripMenuItem;
     }
 }

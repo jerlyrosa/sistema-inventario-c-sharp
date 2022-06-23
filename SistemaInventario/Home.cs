@@ -42,5 +42,12 @@ namespace SistemaInventario
             new UserList().Show();
 
         }
+
+        private void agregarObjectoAlInventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+            new FormAddObjects().Show();
+        }
     }
 }

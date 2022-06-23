@@ -99,6 +99,37 @@ namespace connectionDb
         }
 
 
+
+
+        public Boolean registrarObjecto(string name, string description, string estado, string categoria)
+        {
+            connection database = new connection();
+            database.connect.Open();
+
+            SqlCommand cmd = new SqlCommand("RESGISTRAR_OBJECTO", database.connect);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@name", name);
+            cmd.Parameters.AddWithValue("@description", description);
+            cmd.Parameters.AddWithValue("@estado", estado);
+            cmd.Parameters.AddWithValue("@categoria", categoria);
+
+
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+
+        }
+
+
+
+
     }
 
 }
