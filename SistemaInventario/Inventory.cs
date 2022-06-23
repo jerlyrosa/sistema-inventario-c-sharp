@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using connectionDb;
+﻿using connectionDb;
 
 
 namespace SistemaInventario
@@ -48,6 +39,16 @@ namespace SistemaInventario
                 MessageBox.Show($"Error al Borar el objecto, no exite tal objeto con el id{id}","Error al borrar objecto");
 
             }
+        }
+
+        private void btnGenerar_Click(object sender, EventArgs e)
+        {
+            new InventoryReport().Show();
+        }
+
+        private void txtID_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

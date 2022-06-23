@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnGenerar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.agvOjectos)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -104,12 +105,13 @@
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(100, 23);
             this.txtID.TabIndex = 8;
+            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             // 
             // btnUpdate
             // 
             this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnUpdate.Location = new System.Drawing.Point(670, 385);
+            this.btnUpdate.Location = new System.Drawing.Point(590, 385);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(124, 27);
             this.btnUpdate.TabIndex = 9;
@@ -117,11 +119,24 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
+            // btnGenerar
+            // 
+            this.btnGenerar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGenerar.Location = new System.Drawing.Point(734, 385);
+            this.btnGenerar.Name = "btnGenerar";
+            this.btnGenerar.Size = new System.Drawing.Size(124, 27);
+            this.btnGenerar.TabIndex = 10;
+            this.btnGenerar.Text = "Generar Reporte";
+            this.btnGenerar.UseVisualStyleBackColor = true;
+            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
+            // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(917, 450);
+            this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label1);
@@ -131,7 +146,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Inventory";
-            this.Text = "Inventory";
+            this.Text = "Objectos  de investario";
             ((System.ComponentModel.ISupportInitialize)(this.agvOjectos)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -150,5 +165,6 @@
         private Label label1;
         private TextBox txtID;
         private Button btnUpdate;
+        private Button btnGenerar;
     }
 }
