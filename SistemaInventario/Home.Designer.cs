@@ -34,6 +34,7 @@
             this.inventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarNuevoUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listaDeUsuariosRegistradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +63,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inventarioToolStripMenuItem,
             this.agregarNuevoUsuarioToolStripMenuItem,
+            this.listaDeUsuariosRegistradosToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -90,6 +92,13 @@
             this.salirToolStripMenuItem.Text = "salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
+            // listaDeUsuariosRegistradosToolStripMenuItem
+            // 
+            this.listaDeUsuariosRegistradosToolStripMenuItem.Name = "listaDeUsuariosRegistradosToolStripMenuItem";
+            this.listaDeUsuariosRegistradosToolStripMenuItem.Size = new System.Drawing.Size(167, 20);
+            this.listaDeUsuariosRegistradosToolStripMenuItem.Text = "Lista de usuarios registrados";
+            this.listaDeUsuariosRegistradosToolStripMenuItem.Click += new System.EventHandler(this.listaDeUsuariosRegistradosToolStripMenuItem_Click);
+            // 
             // Home
             // 
             this.AllowDrop = true;
@@ -117,5 +126,6 @@
         private ToolStripMenuItem inventarioToolStripMenuItem;
         private ToolStripMenuItem agregarNuevoUsuarioToolStripMenuItem;
         private ToolStripMenuItem salirToolStripMenuItem;
+        private ToolStripMenuItem listaDeUsuariosRegistradosToolStripMenuItem;
     }
 }

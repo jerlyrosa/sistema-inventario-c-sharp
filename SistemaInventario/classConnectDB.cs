@@ -65,9 +65,7 @@ namespace connectionDb
 
             try
             {
-      
-
-     
+   
 
                 return true;
 
@@ -84,13 +82,7 @@ namespace connectionDb
 
 
 
-
-
-
-
-
-
-        public DataTable getClientes()
+        public DataTable getUsuarios()
         {
             connection database = new connection();
             database.connect.Open();
@@ -105,12 +97,6 @@ namespace connectionDb
 
 
         }
-
-
-
-
-
-
 
 
     }

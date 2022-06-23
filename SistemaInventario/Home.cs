@@ -35,5 +35,12 @@ namespace SistemaInventario
             new Login().Show();
  
         }
+
+        private void listaDeUsuariosRegistradosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new UserList().Show();
+
+        }
     }
 }
