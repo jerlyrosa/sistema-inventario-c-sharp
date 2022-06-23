@@ -27,5 +27,27 @@ namespace SistemaInventario
             this.Close();
             new Home().Show();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            agvOjectos.DataSource = data.getObjecto();
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(txtID.Text);
+
+            Boolean isSuccess = data.deleteObjecto(id);
+            if (isSuccess)
+            {
+                MessageBox.Show("Objecto Borrado satifactoriamnete");
+
+            }else
+            {
+                MessageBox.Show($"Error al Borar el objecto, no exite tal objeto con el id{id}","Error al borrar objecto");
+
+            }
+        }
     }
 }

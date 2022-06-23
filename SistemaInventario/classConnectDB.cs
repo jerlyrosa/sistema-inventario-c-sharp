@@ -147,6 +147,30 @@ namespace connectionDb
 
 
 
+        public Boolean deleteObjecto(int id)
+        {
+            connection database = new connection();
+            database.connect.Open();
+
+            SqlCommand cmd = new SqlCommand("ELIMINAROJECTO", database.connect);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@id", id);
+
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+                return false;
+            }
+
+        }
+
+
 
 
 
