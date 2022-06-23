@@ -100,7 +100,6 @@ namespace connectionDb
 
 
 
-
         public Boolean registrarObjecto(string name, string description, string estado, string categoria)
         {
             connection database = new connection();
@@ -126,6 +125,30 @@ namespace connectionDb
             }
 
         }
+
+
+        public DataTable getObjecto()
+        {
+            connection database = new connection();
+            database.connect.Open();
+
+            SqlDataAdapter adapter = new SqlDataAdapter("GETOBJECTO", database.connect);
+
+            DataTable data = new DataTable();
+            adapter.Fill(data);
+
+
+            return data;
+
+
+        }
+
+
+
+
+
+
+
 
 
 

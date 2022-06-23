@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.agvOjectos = new System.Windows.Forms.DataGridView();
             this.regresarAlHomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agvOjectos)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,14 +46,14 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Lista de objectos";
             // 
-            // dataGridView1
+            // agvOjectos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 114);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(638, 298);
-            this.dataGridView1.TabIndex = 4;
+            this.agvOjectos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.agvOjectos.Location = new System.Drawing.Point(39, 114);
+            this.agvOjectos.Name = "agvOjectos";
+            this.agvOjectos.RowTemplate.Height = 25;
+            this.agvOjectos.Size = new System.Drawing.Size(638, 298);
+            this.agvOjectos.TabIndex = 4;
             // 
             // regresarAlHomeToolStripMenuItem
             // 
@@ -77,13 +77,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(726, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.agvOjectos);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Inventory";
             this.Text = "Inventory";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agvOjectos)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -94,7 +94,7 @@
         #endregion
 
         private Label label2;
-        private DataGridView dataGridView1;
+        private DataGridView agvOjectos;
         private ToolStripMenuItem regresarAlHomeToolStripMenuItem;
         private MenuStrip menuStrip1;
     }
