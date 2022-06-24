@@ -13,7 +13,6 @@ namespace SistemaInventario
             this.Hide();
             new Inventory().Show();
 
-
         }
 
         private void agregarNuevoUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
@@ -24,10 +23,6 @@ namespace SistemaInventario
 
         }
 
-        private void Home_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -42,12 +37,21 @@ namespace SistemaInventario
             new UserList().Show();
 
         }
-
         private void agregarObjectoAlInventarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
             this.Hide();
             new FormAddObjects().Show();
+        }
+
+
+
+
+
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

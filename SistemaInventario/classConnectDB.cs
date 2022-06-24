@@ -3,9 +3,6 @@ using System.Data;
 
 
 
-
-
-
 namespace connectionDb
 {
     class connection
@@ -78,8 +75,6 @@ namespace connectionDb
             }
 
         }
-
-
 
 
         public DataTable getUsuarios()
@@ -162,9 +157,9 @@ namespace connectionDb
                 cmd.ExecuteNonQuery();
                 return true;
             }
-            catch (SqlException ex)
+            catch 
             {
-                throw ex;
+      
                 return false;
             }
 

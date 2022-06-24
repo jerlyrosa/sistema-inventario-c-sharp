@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using connectionDb;
+﻿using connectionDb;
 
 namespace SistemaInventario
 {
@@ -48,7 +39,6 @@ namespace SistemaInventario
                 MessageBox.Show("Correo o contrasena incorrectos", "Error al iniciar sesion", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-
 
         }
 
